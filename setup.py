@@ -3,9 +3,6 @@
 from setuptools import setup
 
 
-def read(filename):
-    return open(filename).read()
-
 setup(name="lzo-indexer",
     version="0.0.1",
     description="Library for indexing LZO compressed files",
@@ -28,7 +25,7 @@ setup(name="lzo-indexer",
     maintainer_email="tom@duedil.com",
     url="https://github.com/duedil-ltd/python-lzo-indexer",
     download_url="https://github.com/duedil-ltd/python-lzo-indexer/archive/release-0.0.1.zip",
-    license=read("LICENSE"),
+    license='License :: OSI Approved :: Apache Software License',
     packages=["lzo_indexer"],
     scripts=["bin/lzo-indexer"],
     test_suite="tests.test_indexer",
